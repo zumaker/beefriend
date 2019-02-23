@@ -4,9 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment">
+    <!--wallpaper-->
+    <ImageView
 
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <LinearLayout
+        android:background="#99FBFCFB"
+        android:padding="20dp"
         android:layout_margin="30dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -42,6 +50,9 @@
             android:layout_height="wrap_content" />
         <!--New Register-->
         <TextView
+            android:id="@+id/txtRegister"
+            android:clickable="true"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             android:text="New Register"
             android:layout_gravity="center_horizontal"
