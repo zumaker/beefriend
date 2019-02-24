@@ -53,33 +53,75 @@
                     android:src="@drawable/avata" />
 
                 <!--Name-->
-                <EditText
-                    android:id="@+id/edtName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                <LinearLayout
                     android:layout_marginRight="50dp"
-                    android:hint="Name"
-                    android:inputType="text" />
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:hint="Name"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
 
                 <!--User-->
-                <EditText
-                    android:id="@+id/edtUser"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                <LinearLayout
                     android:layout_marginRight="50dp"
-                    android:hint="User:"
-                    android:inputType="text" />
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="User:"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+
+
                 <!--Password-->
-                <EditText
-                    android:id="@+id/edtPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                <LinearLayout
                     android:layout_marginRight="50dp"
-                    android:hint="Password:"
-                    android:inputType="textPassword" />
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Password:"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
+
 
             </LinearLayout>
 
