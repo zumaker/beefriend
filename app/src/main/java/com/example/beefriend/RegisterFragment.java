@@ -158,6 +158,17 @@ public class RegisterFragment extends Fragment {
 
                 ftpClient.changeDirectory("zumaker");
                 ftpClient.upload(file, new uploadListener());
+//                update Database
+                AddUserThread addUserThread = new AddUserThread(getActivity());
+                addUserThread.execute(name,user,password,"http://androidthai.in.th/ksu/zumaker/"+nameImage);
+                String result = addUserThread.get() ;
+
+                if (Boolean.parseBoolean(result))
+                {
+                    getActivity().getSupportFragmentManager().popBackStack();
+                }
+
+
 
             }
             catch (Exception e)
